@@ -19,3 +19,19 @@ Para investigar o impacto da representação semântica no desempenho da BiGRU, 
 
 2.  **Embeddings Treináveis:**
     Inicialização de uma camada de embeddings aleatória, onde as representações vetoriais são aprendidas durante o treinamento.
+
+## 📈 Resultados
+
+Comparativo de desempenho entre as técnicas:
+
+**Dataset de validação**
+| Estratégia de Embedding | Acurácia | Perda (Loss) |
+| :--- | :--- | :--- |
+| GloVe (Pré-treinado) | 89.6% | 0.2496 |
+| Aprendido no Treinamento | 91.8% | 0.2209 |
+
+**Dataset de teste**
+| Estratégia de Embedding | Acurácia | 
+| :--- | :--- |
+| GloVe (Pré-treinado) | 89.4% 
+| Aprendido no Treinamento | 91.7%
