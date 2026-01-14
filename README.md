@@ -24,14 +24,27 @@ Para investigar o impacto da representação semântica no desempenho da BiGRU, 
 
 Comparativo de desempenho entre as técnicas:
 
-**Dataset de validação**
+**Métricas no Dataset de Validação**
 | Estratégia de Embedding | Acurácia | Perda (Loss) |
 | :--- | :--- | :--- |
-| GloVe (Pré-treinado) | 89.6% | 0.2496 |
+| Pré-treinado(GloVe) | 89.6% | 0.2496 |
 | Aprendido no Treinamento | 91.8% | 0.2209 |
 
-**Dataset de teste**
+**Métricas no Dataset de Teste**
 | Estratégia de Embedding | Acurácia | 
 | :--- | :--- |
-| GloVe (Pré-treinado) | 89.4% 
+| Pré-treinado(GloVe) | 89.4% 
 | Aprendido no Treinamento | 91.7%
+
+<br>
+<table>
+  <caption><b> Matrizes de Confusão - Dataset de Teste</b></caption>
+  <tr>
+    <td align="center"><b>Embeddings GloVe</b></td>
+    <td align="center"><b>Embeddings Aprendidos no Treinamento</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/confusion_matrix_glove.png" width="400"></td>
+    <td><img src="assets/confusion_matrix_scratch.png" width="400"></td>
+  </tr>
+</table>
